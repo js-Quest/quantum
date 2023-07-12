@@ -1,14 +1,15 @@
 // import dotenv from "dotenv";
+import apiKey from './Key'
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 const headers = {
   'Content-Type': 'application/json',
-  'Authorization': 'Bearer TOKEN'
+  'Authorization': 'Bearer ' + apiKey
 };
 function getFriendQuestion() {
 
 const data = {
   model: 'gpt-3.5-turbo',
-  messages: [{ role: 'user', content: 'say: this is a friend test' }],
+  messages: [{ role: 'system', content: "you provide an 'unlocking phrase' question that is engaging for getting to know a new friend." }],
   temperature: 0.7
 };
 
