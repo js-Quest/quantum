@@ -22,7 +22,8 @@ const data = {
     .then(data => {
       const completion = data.choices[0].message.content;
       console.log(completion);
-      return completion
+      window.localStorage.setItem('completion', completion)
+      window.location.reload();
     })
     .catch(error => {
       console.error(error);
@@ -46,6 +47,8 @@ const data = {
     .then(data => {
       const completion = data.choices[0].message.content;
       console.log(completion);
+      window.localStorage.setItem('completion', completion)
+      window.location.reload();
     })
     .catch(error => {
       console.error(error);
@@ -68,6 +71,8 @@ const data = {
     .then(data => {
       const completion = data.choices[0].message.content;
       console.log(completion);
+      window.localStorage.setItem('completion', completion)
+      window.location.reload();
     })
     .catch(error => {
       console.error(error);
