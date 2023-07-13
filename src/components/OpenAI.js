@@ -1,9 +1,9 @@
 // import dotenv from "dotenv";
-import apiKey from './Key'
+import API from './Key'
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 const headers = {
   'Content-Type': 'application/json',
-  'Authorization': 'Bearer ' + apiKey
+  'Authorization': 'Bearer ' + API
 };
 function getFriendQuestion() {
 

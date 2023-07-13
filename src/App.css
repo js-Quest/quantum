@@ -17,3 +17,30 @@ h2 {
   margin-left: 1rem !important;
   margin-right: 1rem !important;
 }
+
+.typewriter {
+  overflow: auto;
+  /* Ensure the text doesn't overflow */
+  border-right: 0.15em solid #000;
+  /* Create the typewriter cursor effect */
+  white-space: nowrap;
+  /* Prevent line breaks */
+  letter-spacing: 0.15em;
+  /* Add some spacing between characters */
+  animation: typing 2s steps(40) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.animate {
+  animation: none;
+  /* Disable the animation when not needed */
+}
